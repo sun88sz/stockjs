@@ -1,4 +1,4 @@
-class Ajax {
+export class Ajax {
     private url: string;
     private headers: any;
 

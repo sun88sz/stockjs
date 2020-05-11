@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var Ajax = /** @class */ (function () {
     function Ajax(url, headers) {
         this.url = url;
@@ -44,6 +46,7 @@ var Ajax = /** @class */ (function () {
     };
     return Ajax;
 }());
+exports.Ajax = Ajax;
 function getStockData(code) {
     // let $ = new Ajax('https://www.baidu.com', { 'Content-Type': 'application/x-www-form-urlencoded' })
     var $ = new Ajax('http://127.0.0.1:8080/stock', { 'Content-Type': 'text/plain' });
